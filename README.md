@@ -6,7 +6,7 @@ It's a little try from my side to make a platform for tailors of Bangladesh and 
 <img src="https://github.com/J-H-Mojumder/tailor_bd/blob/main/screenshots/index.PNG">
 
 ## Login UI:
-<img src="https://github.com/J-H-Mojumder/tailor_bd/blob/main/screenshots/login-ui.PNG">
+<img src="https://github.com/J-H-Mojumder/tailor_bd/blob/main/screenshots/login-ui.png">
 
 ## Logged in:
 <img src="https://github.com/J-H-Mojumder/tailor_bd/blob/main/screenshots/logged-in.PNG">
