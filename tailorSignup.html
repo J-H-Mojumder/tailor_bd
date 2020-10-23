@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tailor SignUp</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="tailorSignup.css">
+</head>
+<body>
+
+<!-- navbar -->
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+
+			<a href="#" class="navbar-brand"><i class="fas fa-user-tie"></i> TailorBD.com</a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="bs-nav-demo">
+    
+			<ul class="nav navbar-nav">
+				<li><a href="start.html" target="_blank">Home</a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<div class="dropdown">
+					<a href="#">Login <i class="fas fa-user"></i><hr></a>
+    					<div class="dropdown-content">
+   							<h5>LOGIN</h5>
+							<p><input id="email" name="email" type="email" placeholder="E-mail address"></p>
+							<p><input id="password" name="password" type="password" placeholder="Password"></p>
+							<p>
+								Role:
+								<select class="role">
+									<option>Tailor</option>
+									<option>Customer</option>
+								</select>
+							</p>
+							<p><button class="btn btn-success btn-sm">LOGIN</button></p>
+							<p><a href="http://www.facebook.com" class="btn btn-primary btn-md" target="_blank"><i class="fab fa-facebook-f"></i>  Login with Facebook</a></p>
+							<p><a href="http://www.google.com" class="btn btn-info btn-md" target="_blank"><i class="fab fa-google"></i>  Login with Google</a></p>
+							<p><a href="forgotpass.html" class="new" target="_blank">Forgot Password?</a></p>
+							<p>Are you new?</p>
+							<p><a href="customerSignup.html" class="new" target="_blank">Click here for signup as a Customer</a></p>
+							<p><a href="tailorSignup.html" class="new" target="_blank">Click here for signup as a Tailor</a></p>
+  						</div>
+				</div>
+			</ul>
+		</div>
+		</div>
+	</nav>
+
+	<!-- body -->
+	<div class="container">
+		<h1>Hi! Let's Get Started</h1>
+		<hr>
+		<h3>Wanna open an account of your tailor Shop? You are in the right place.</h3>
+		<h3>Your Shop will be in our website in next couple of mintues.</h3>
+		<h3>First, let's get to know each other...</h3>
+		<hr>
+		<div class="row">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4 form">
+				<form action="http://www.google.com" method="GET">
+				<p>
+					<label for="ShopName">Shop Name:</label>
+					<input id="ShopName" name="ShopName" type="text" placeholder="ShopName" required>
+				</p>
+				<p>
+					<label for="OwnerFirstName">Owner's First Name:</label>
+					<input id="OwnerFirstName" name="OwnerFirstName" type="text" placeholder="OwnerFirstName" required>
+				</p>
+				<p>
+					<label for="OwnerLastName">Owner's Last Name:</label>
+					<input id="OwnerLastName" name="OwnerLastName" type="text" placeholder="OwnerLastName" required>
+				</p>
+				<p>
+					Category:
+					<select name="Category">
+						<option>Men</option>
+						<option>Women</option>
+						<option>Kids</option>
+					</select>
+				</p>
+				<p>
+					<label for="Location">Location:</label>
+					<input id="Location" name="Location" type="text" placeholder="Location" required>
+				</p>
+				
+				<!-- email-password -->
+				<p>
+					<label for="Email">Email:</label>
+					<input id="Email" name="Email" type="email" placeholder="Email" required>
+				</p>
+				<p>
+					<label for="Password">Password:</label>
+					<input id="Password" name="Password" type="password" placeholder="5 to 10 characters" minlength="5" maxlength="10" required>
+				</p>
+				<p>
+					<label for="ConfirmPassword">Confirm Password:</label>
+					<input id="ConfirmPassword" name="ConfirmPassword" type="password" placeholder="5 to 10 characters" minlength="5" maxlength="10" required>
+				</p>
+				<p>
+					<label for="Contact">Contact:</label>
+					<input id="Contact" name="Contact" type="text" placeholder="Contact" required>
+				</p>
+				<p>
+					<label for="ShopPic">Add Pictures of Shop:</label>
+					<input id="ShopPic" name="ShopPic" type="text" placeholder="ShopPic" required>
+					<button class="btn btn-success btn-sm">Add</button>
+				</p>
+				<p>
+					<label for="OwnerPic">Add Piture of Owner:</label>
+					<input id="OwnerPic" name="OwnerPic" type="text" placeholder="OwnerPic" required>
+					<button class="btn btn-success btn-sm">Add</button>
+				</p>
+
+
+				
+				<!-- date of birth -->
+				<p>
+					Birthday:
+					<select name="Month">
+						<option>Jan</option>
+						<option>Feb</option>
+						<option>Mar</option>
+						<option>Apr</option>
+						<option>May</option>
+						<option>Jun</option>
+						<option>Jul</option>
+						<option>Aug</option>
+						<option>Sep</option>
+						<option>Oct</option>
+						<option>Nov</option>
+						<option>Dec</option>	
+					</select>
+
+					<select name="Day">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+						<option>12</option>
+						<option>13</option>
+						<option>14</option>
+						<option>15</option>
+						<option>16</option>
+						<option>17</option>
+						<option>18</option>
+						<option>19</option>
+						<option>20</option>
+						<option>21</option>
+						<option>22</option>
+						<option>23</option>
+						<option>24</option>
+						<option>25</option>
+						<option>26</option>
+						<option>27</option>
+						<option>28</option>
+						<option>29</option>
+						<option>30</option>
+						<option>31</option>
+					</select>
+
+					<select name="Year">
+						<option>2018</option>
+						<option>2017</option>
+						<option>2016</option>
+						<option>2015</option>
+						<option>2014</option>
+						<option>2013</option>
+						<option>2012</option>
+						<option>2011</option>
+						<option>2010</option>
+						<option>2009</option>
+						<option>2008</option>
+						<option>2007</option>
+						<option>2006</option>
+						<option>2005</option>
+						<option>2004</option>
+						<option>2003</option>
+						<option>2002</option>
+						<option>2001</option>
+						<option>2000</option>
+						<option>1999</option>
+						<option>1998</option>
+						<option>1997</option>
+						<option>1996</option>
+						<option>1995</option>
+						<option>1994</option>
+						<option>1993</option>
+						<option>1993</option>
+						<option>1992</option>
+						<option>1991</option>
+						<option>1990</option>
+					</select>
+				</p>
+
+				<p>
+					<label for="Male">Male:</label>
+					<input name="Gender" id="Male" type="radio" value="MALE">
+					<label for="Female">Female:</label>
+					<input name="Gender" id="Female" type="radio" value="FEMALE">
+					<label for="Other">Other:</label>
+					<input name="Gender" id="Other" type="radio" value="OTHER">
+				</p>
+
+
+				<p>
+					<input type="checkbox" required="">
+					I agree to the terms and conditions
+				</p>
+
+				<div class="go">
+					<a href="shops.html" class="btn btn-success btn-lg" target="_blank">Create Account</a>
+				</div>
+
+			</form>
+			</div>
+			<div class="col-sm-4"></div>
+						
+		</div>
+
+	</div>
+
+	<!-- jumbotron -->
+	<div class="container">
+		<div class="jumbotron">
+			<div class="row">
+				<div class="col-lg-4">
+					<h4>TailorBD</h4>
+					<p><a href="#">About Us</a></p>
+					<p><a href="#">Contact Us</a></p>
+					<p><a href="#">Jobs</a></p>
+				</div>
+				<div class="col-lg-4">
+					<h4>Company Policy</h4>
+					<p><a href="#">Terms and Condition</a></p>
+					<p><a href="#">Privacy Policy</a></p>
+				</div>
+				<div class="col-lg-4">
+					<h4>Support</h4>
+					<p><a href="#">Troubleshooting</a></p>
+					<p><a href="#">FAQ</a></p>
+					<p><a href="#">Get Help</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-alt-circle-up"></i></button> 
+
+	<!-- footer -->
+	<div class="footer">
+			<p>Follow us on Social Media</p>
+			<div style="margin: 10px 0;">
+				<p>
+		    		<a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+		    		<a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+		    		<a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+		    		<a href="https://www.gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+			   	</p>
+			</div>
+			<p>Copyright <i class="far fa-copyright"></i> 2018 TailorBD.com. All rights reserved.</p>
+			<p>All works are property of their respective owners and may not be used elsewhere without written permission.</p>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<!-- scroll to top button -->
+	<script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		        document.getElementById("myBtn").style.display = "block";
+		    } else {
+		        document.getElementById("myBtn").style.display = "none";
+		    }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		    document.body.scrollTop = 0;
+		    document.documentElement.scrollTop = 0;
+		}
+	</script>
+
+
+</body>
+</html>

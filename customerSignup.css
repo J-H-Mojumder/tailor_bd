@@ -1,0 +1,118 @@
+body{
+    background:  #EDF2F5;
+    color: #130933;
+    font-family: Raleway;
+}
+
+.navbar-default{
+    background: #28237A;
+    border-color: #878ea3;
+}
+
+.navbar-default .navbar-nav>li>a{
+	margin-top: 20px;
+    color: white;
+}
+
+.navbar-default .navbar-brand{
+	margin-top: 20px;
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	background-color: white;
+	color: grey;
+}
+
+.navbar-default .navbar-brand:hover{
+	background-color: white;
+	color: grey;
+}
+
+.dropdown {
+    position: relative;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.dropdown a{
+    color: white;
+}
+.dropdown-content {
+    display: none;
+    right: 0;
+    background: #B5B5B5;
+    border: 1px solid rgba(100,100,100,0.4);
+    border-radius: 0 0 2px 2px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+    color: #1d2129;
+    overflow: visible;
+    position: absolute;
+    top: 38px;
+    width: 250px;
+    text-align: center;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown-content .new{
+	color: blue;
+}
+
+.container{
+	text-align: center;
+}
+
+.form{
+	text-align: left;
+	border: 2px solid #EDF2F5;
+	padding-top: 20px;
+}
+
+hr{
+	border-color: grey;
+	background-color:  grey;
+	color: grey;
+}
+
+.go{
+	padding-top: 50px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.jumbotron{
+	box-shadow: 0px, 8px, 16px, 24px rgba(0,0,0,0.5);
+	background: #B7E6E8;
+    color: #161140;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #22804F; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #28237A;
+    color: white;
+    text-align: center;
+}
