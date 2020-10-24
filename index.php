@@ -29,7 +29,8 @@
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="start.php">Home</a></li>
 			</ul>
-
+			
+			<!-- Login Form -->
 			<ul class="nav navbar-nav navbar-right">
 				<div class="dropdown">
 					<a href="#">Login <i class="fas fa-user"></i><hr></a>
@@ -53,25 +54,29 @@
 							</p>
 						</form>
 	<?php 
+		//established connection with the database
 		include "database.php";
 	 ?>					
 						
 	<?php 
+	//session start to get all login informations
 	session_start();
 		$db = new database();
 		if(isset($_POST['Submit']))
 		{
-			$username = mysqli_real_escape_string($db->link , $_POST['username']); 
+			$username = mysqli_real_escape_string($db->link , $_POST['username']); //real escape to avoid sql injections
 			$email = mysqli_real_escape_string($db->link , $_POST['email']);
 			$password = mysqli_real_escape_string($db->link , $_POST['password']);
 			$role = $_POST['role'];
-
+			
+			//if email or password field is empty the form will not be submitted
 			if($email == "" || $password == "")
 			{
 				echo "Field must not be empty!!!";
 			}
 			else
 			{
+				// checking authenticity
 				if($role == 'customer')
 				{
 					$query = "SELECT * FROM customer WHERE Lastname = '$username' OR Firstname = '$username' AND Email = '$email' AND Password = '$password'";
@@ -82,7 +87,8 @@
 					$query = "SELECT * FROM tailor WHERE Lastname = '$username' OR Firstname = '$username' AND Email = '$email' AND Password = '$password'";	
 					$result = $db-> login($query);
 				}
-
+				
+				// deciding if the user exists
 				if($result == true)
 				{
 					$_SESSION['username'] = $username;
@@ -90,7 +96,7 @@
 				}
 				else 
 				{
-					echo "Wrong password!!!";
+					echo "Wrong credential!!!";
 				}
 			}
 		}
